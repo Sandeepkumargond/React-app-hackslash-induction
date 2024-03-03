@@ -1,192 +1,215 @@
 body{
+  background-color:#e7eff4;
+  color:black;
+  }
+.container{
+  width: 77rem;
+  font-family: Hi Melody, cursive;
+}
+/*lets collaborate*/
+.Lc{
+  width:85%;
+  font-family: Roboto Slab, serif;
+  margin-left: 6rem;
+  padding-bottom: 4rem;
+}
+h4{
+  font-size: 1.5rem;
+  padding-left: 1.4rem;
+  margin-bottom: 3rem;
+  transition: 0.2s;
+  cursor: pointer;
+  font-weight:bolder;
+}
+h4:hover{
+  transform: scale(1.04);
+  color: #989797;
+}
+.block-1,.block-2,.block-3,.block-4{
+  display: flex;
+  flex-direction: row;
+}
+/*android-data-pic*/
+.adp{
+  width: 40%;
+  padding-right: 6rem;
+  font-family: Roboto Slab, serif;
+}
+h2{
+  font-size: 310%;
+  padding-right: 0.1rem;
+  margin: 0;
+  padding-top: 0.4rem;
+  font-weight: 300;
+  cursor: pointer;
+  line-height:1.2em;
+}
+h2:hover{
+  transform: scale(1.04);
+  box-shadow: 0 0 0.1px rgba(0, 0, 0, 0.2);
+  
+}
+h3{
+  font-size: 1.1rem;
+  padding-top: 2.4rem;
+  padding-bottom: 0.6rem;
+  font-family: Roboto Slab, serif;
+  font-weight: 450;
+}
+/*header+arrow*/
+.head-arrow{
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+}
+.picture{
+  height: 20rem;
+}
+p{
+  font-size: 1.3rem;
+  font-weight: bolder;
+  margin-right: 2.2rem;
+  font-family: Roboto Slab, serif;
+  cursor: pointer;
+  transition: 0.1s;
+}
+p:hover{
+  opacity: 0.6;
+}
+.mouse{
+  cursor: pointer;
+  margin-top: 25px;
+}
+.laptop{
+  background-color: transparent;
+  perspective: 998px;
+}
+.app-pic{
+  width:33.2rem;
+  height: 20rem;
+}
+.android{
+  display: none;
+}
+.picture1{
+  width:33.2rem;
+  height: 20rem;
+}
+.laptop-pic{
+  height: 20rem;
+  text-align: center;
+  transition: transform 1.2s;
+  transform-style: preserve-3d;
+}
+/* this page load slowly*/
+.block-1{
+  animation: slide-up 0.5s ease-in;
+}
+.block-2{
+  animation: slide-up 0.8s ease-in;
+}
+.block-3{
+  animation: slide-up 1.2s ease-in;
+}
+.block-4{
+  animation: slide-up 1.6s ease-in;
+}
+.dark-mode{
+   background-color:#212529;
+  border-color: aliceblue;
+  color: aliceblue;
+  cursor: pointer;
+  transition: 0.2s;
+  }
+.dark-mode:hover{
+  opacity: 0.8;
+}
+button{
+  padding: 1rem;
+  margin: 100px;
+}
+/*rotate pics*/
+.laptop:hover .laptop-pic{
+    transform: rotateY(180deg);
+}
+/*slide up*/   
+@keyframes slide-up {
+  from{
+    opacity: 0.5;
+    transform: translateY(10rem);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*responsiveness (min-width: 00px) and (max-width: 1020px)  */
+ @media screen and (max-width: 1020px){
+  body{
     background-color:#e7eff4;
-    color:black;
-    }
-  .container{
-    width: 77rem;
-    font-family: Hi Melody, cursive;
-
-    }
-  .Lc{
-    width:85%;
-    font-family: Roboto Slab, serif;
-    margin-left: 6rem;
-    padding-bottom: 4rem;
-
+  }
+  .adp{
+    width:40rem;
   }
   h4{
-    font-size: 1.5rem;
-    padding-left: 1.4rem;
-    margin-bottom: 3rem;
-    transition: 0.2s;
-    cursor: pointer;
-    font-weight:bolder;
+    padding-left: 0.2rem;
+    margin-top: 3rem;
   }
-  h4:hover{
-    transform: scale(1.04);
-    color: #989797;
-  }
-  .block-1,.block-2,.block-3,.block-4{
-    display: flex;
-    flex-direction: row;
-  }
-  .Ai{
-    padding-right: 6rem;
-    width: 40%;
-    font-family: Roboto Slab, serif;
+  .android{
+    display: block;
+    margin-top: 1rem;
   }
   h2{
-    font-size: 310%;
-    padding-top: 0.4rem;
-    padding-right: 0.1rem;
-    margin: 0;
-    font-weight: 300;
-    line-height:1.2em;
-    cursor: pointer;
-  }
-  h2:hover{
-    transform: scale(1.04);
-    box-shadow: 0 0 0.1px rgba(0, 0, 0, 0.2);
-    
-  }
-  h3{
-    font-size: 1.1rem;
-    padding-top: 2.4rem;
-    font-family: Roboto Slab, serif;
-    padding-bottom: 0.6rem;
-    font-weight: 450;
-  }
-  .Rpa{
-    display: flex;
-    flex-direction: row;
-    height: 50px;
-    
-
-   }
-  p{
-    font-size: 1.3rem;
-    font-weight: bolder;
-    margin-right: 2.2rem;
-    font-family: Roboto Slab, serif;
-    cursor: pointer;
-    transition: 0.1s;
-  }
-  p:hover{
-    opacity: 0.6;
+    padding-top: 2rem;
   }
   .mouse{
     cursor: pointer;
-    margin-top: 25px;
+    margin-top:40px;
   }
-  .picture{
-    height: 20rem;
+  .head-arrow{
+   height:70px;
+  }
+  html{
+    font-size: 170%;
+  }
+  .picture1{
+    width:95%;
   }
   .app-pic{
-    width:33.19125rem;
-    height: 20rem;
+    width:95%;
   }
-  .image-ns{
-    width:33.19125rem;
-    height: 20rem;
+  h3{
+    padding-top: 0.8rem;
   }
-  .android{
-    display: none;
+  p{
+    color:rgb(0, 80, 255);
   }
-  .laptop{
-    background-color: transparent;
-    perspective: 1000px;
+  .first{
+    margin-left: 2rem;
   }
   .laptop-pic{
-    height: 20rem;
-    text-align: center;
-    transition: transform 1.2s;
-    transform-style: preserve-3d;
+    display: none;
   }
-  .laptop:hover .laptop-pic{
-    transform: rotateY(180deg);
+  .picture{
+    width:95%;
   }
-  
-  @media screen and (max-width:400px){
-    .android{
-      display: block;
-      margin-top: 1rem;
-    }
-    .laptop-pic{
-      display: none;
-    }
-    html{
-      font-size: 180%;
-    }
-    .Rpa{
-      width:35.5rem;
-    }
-    h4{
-      padding-left: 0.2rem;
-      margin-top: 3rem;
-    }
-    h3{
-      padding-top: 0.8rem;
-    }
-    h2{
-      padding-top: 2rem;
-    }
-    .app-pic{
-      width:95%;
-    }
-    .picture{
-      width:95%;
-    }
-    .picture1{
-      width:95%;
-    }
-    .first{
-      margin-left: 4rem;
-    }
-    p{
-      color:rgb(0, 81, 255);
-    }
-  } 
-  .block-1{
-    animation: slide-up 0.5s ease-in;
   }
-  .block-2{
-    animation: slide-up 0.8s ease-in;
+/*(min-width: 1021px) and (max-width: 1200px)*/
+@media (min-width: 1021px) and (max-width: 1200px) {
+ html{
+    font-size: 15px;
   }
-  .block-3{
-    animation: slide-up 1.2s ease-in;
+  .laptop-pic{
+    display: block;
   }
-  .block-4{
-    animation: slide-up 1.6s ease-in;
+  .android{
+    display:none;
+    margin-top: 1rem;
   }
-  .dark-mode{
-     background-color:#212529;
-    border-color: aliceblue;
-    color: aliceblue;
-    cursor: pointer;
-    transition: 0.2s;
-    
+}
+/*(min-width: 1201px) and (max-width: 1600px)*/
+@media (min-width: 1201px) and (max-width: 1600px) {
+  body {
+    background-color:#e7eff4;
   }
-  .dark-mode:hover{
-    opacity: 0.8;
-  }
-  .dark{
-    background-color: #212529;
-    color: aliceblue;
-  }
-  button{
-    padding: 1rem;
-    margin: 100px;
-     }
-  @keyframes slide-up {
-    from{
-      opacity: 0.5;
-      transform: translateY(10rem);
-    }
-    to{
-      opacity: 1;
-      transform: translateY(0);
-    }
-    
-  }
-  /*extra*/
-  
+}
