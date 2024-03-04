@@ -25,10 +25,6 @@ h4:hover{
   transform: scale(1.04);
   color: #989797;
 }
-.block-1,.block-2,.block-3,.block-4{
-  display: flex;
-  flex-direction: row;
-}
 /*android-data-pic*/
 .adp{
   width: 40%;
@@ -49,12 +45,16 @@ h2:hover{
   box-shadow: 0 0 0.1px rgba(0, 0, 0, 0.2);
   
 }
+.block-1,.block-2,.block-3,.block-4{
+  display: flex;
+  flex-direction: row;
+}
 h3{
   font-size: 1.1rem;
   padding-top: 2.4rem;
+  font-weight: 450;
   padding-bottom: 0.6rem;
   font-family: Roboto Slab, serif;
-  font-weight: 450;
 }
 /*header+arrow*/
 .head-arrow{
@@ -66,15 +66,15 @@ h3{
   height: 20rem;
 }
 p{
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: bolder;
-  margin-right: 2.2rem;
+  margin-right: 2.23rem;
   font-family: Roboto Slab, serif;
   cursor: pointer;
   transition: 0.1s;
 }
 p:hover{
-  opacity: 0.6;
+  opacity: 0.5;
 }
 .mouse{
   cursor: pointer;
@@ -144,7 +144,7 @@ button{
   }
 }
 /*responsiveness (min-width: 00px) and (max-width: 1020px)  */
- @media screen and (max-width: 1020px){
+ @media  (min-width: 00px) and (max-width: 1020px){
   body{
     background-color:#e7eff4;
   }
@@ -175,14 +175,11 @@ button{
   .picture1{
     width:95%;
   }
-  .app-pic{
-    width:95%;
-  }
   h3{
     padding-top: 0.8rem;
   }
   p{
-    color:rgb(0, 80, 255);
+    color:rgb(5, 84, 250);
   }
   .first{
     margin-left: 2rem;
@@ -191,6 +188,9 @@ button{
     display: none;
   }
   .picture{
+    width:95%;
+  }
+   .app-pic{
     width:95%;
   }
   }
